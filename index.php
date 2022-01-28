@@ -15,11 +15,11 @@
 if (isset($_GET['msg']) && $_GET['msg'] == 'success') {
     echo "<div class='alert alert-success' id='alert' role='alert'>
                 Data has been successfully send to the database!
-		   </div><script>window.history.pushState({}, document.title, '/pdo_sandbox');</script>";
+		   </div><script>window.history.pushState({}, document.title, '/');</script>";
 } elseif (isset($_GET['msg']) && $_GET['msg'] == 'fail') {
     echo "<div class='alert alert-danger' id='alert' role='alert'>
                 Something went wrong saving your data!
-		   </div><script>window.history.pushState({}, document.title, '/pdo_sandbox');</script>";
+		   </div><script>window.history.pushState({}, document.title, '/');</script>";
 }
 ?>
 <div class="container" style="width: 45rem">
